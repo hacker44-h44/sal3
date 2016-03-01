@@ -1064,7 +1064,7 @@ local function run(msg, matches)
       save_data(_config.moderation.data, data)
       return 'لطفا عکس جدید گروه را ارسال کنید'
     end
-    if matches[1] == 'ترفیع' and not matches[2] then
+    if matches[1] == '+مدیر' and not matches[2] then
       if not is_owner(msg) then
         return "فقط توسط صاحب گروه"
       end
@@ -1072,7 +1072,7 @@ local function run(msg, matches)
           msgr = get_message(msg.reply_id, promote_by_reply, false)
       end
     end
-    if matches[1] == 'ترفیع' and matches[2] then
+    if matches[1] == '+مدیر' and matches[2] then
       if not is_momod(msg) then
         return
       end
@@ -1083,14 +1083,14 @@ local function run(msg, matches)
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] promoted @".. member)
 	local cbres_extra = {
 	chat_id = msg.to.id,
-        mod_cmd = 'ترفیع', 
+        mod_cmd = '+مدیر', 
 	from_id = msg.from.id
 	}
 	local username = matches[2]
 	local username = string.gsub(matches[2], '@', '')
 	return res_user(username, promote_demote_res, cbres_extra)
     end
-    if matches[1] == 'تنزل' and not matches[2] then
+    if matches[1] == '-مدیر' and not matches[2] then
       if not is_owner(msg) then
         return "فقط توسط صاحب گروه"
       end
@@ -1098,7 +1098,7 @@ local function run(msg, matches)
           msgr = get_message(msg.reply_id, demote_by_reply, false)
       end
     end
-    if matches[1] == 'تنزل' and matches[2] then
+    if matches[1] == '-مدیر' and matches[2] then
       if not is_momod(msg) then
         return
       end
@@ -1112,7 +1112,7 @@ local function run(msg, matches)
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] demoted @".. member)
 	local cbres_extra = {
 	chat_id = msg.to.id,
-        mod_cmd = 'تنزل', 
+        mod_cmd = '-مدیر', 
 	from_id = msg.from.id
 	}
 	local username = matches[2]
@@ -1438,14 +1438,14 @@ return {
   "^(توضیحات)$",
   "^(تنظیم نام) (.*)$",
   "^(تنظیم عکس)$",
-  "^(ترفیع) (.*)$",
-  "^(ترفیع)",
+  "^(+مدیر) (.*)$",
+  "^(+مدیر)",
   "^(راهنما)$",
   "^(پاک کردن) (.*)$",
   "^(kill) (chat)$",
   "^(kill) (realm)$",
-  "^(تنزل) (.*)$",
-  "^(تنزل)",
+  "^(-مدیر) (.*)$",
+  "^(-مدیر)",
   "^(تنظیم) ([^%s]+) (.*)$",
   "^(قفل) (.*)$",
   "^(دارنده) (%d+)$",
