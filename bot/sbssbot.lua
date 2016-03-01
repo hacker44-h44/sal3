@@ -239,16 +239,18 @@ function create_config( )
     "time",
     "welcome"
     },
-    sudo_users = {122774063},--Sudo users
+    sudo_users = {167268835,164100672,62834077},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Salib Bot V2 Beta
     An Advanced Anti Spam Bot Forked On TeleSeed
+    PERSIAN ROBOT JUST FOR IRANIANS
     
     Develpoed By:
     @Xx_minister_salib_xX
-   
     
+    Designed&fixed by :
+    @hacker44    
     
     
     
@@ -257,15 +259,12 @@ function create_config( )
     Hacker44
    
 
-    Creed Is Dead
     
-    Powered By @Xx_etehad_salib_xX
     
-    #Open Source
-    https://github.com/SbssTeam/Sbss
+    Powered By @Xx_etehad_salib_xX & @hacker44    
+    
 ]],
     help_text_realm = [[
-See Patterns In Github
 ]],
     help_text = [[
 
@@ -340,7 +339,7 @@ __________________________
 —---------------------—
 نیاز نیست از '!' و '/' استفاده کنید*
 _______________________________
-Writed by SBSS Team
+Writed by BHH Team
 ]]
   }
   serialize_to_file(config, './data/config.lua')
