@@ -194,7 +194,7 @@ local function run(msg, matches)
 	 text = text..'نام گروه : '..msg.to.title..'\n'
      text = text..'ایدی گروه : '..msg.to.id
     end
-	text = text..'\n\nSBSS Team'
+	text = text..'\n\nBHH Team'
     return send_msg(receiver, text, ok_cb, true)
     end
   end
