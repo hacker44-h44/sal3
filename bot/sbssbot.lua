@@ -267,9 +267,7 @@ function create_config( )
     help_text_realm = [[
 ]],
     help_text = [[
-
-  
-1-banhammer list ^
+banhammer list ^
  
 !kick [username|id]
 (کیک کردن شخص (حتی با ریپلی)
@@ -281,7 +279,7 @@ function create_config( )
 حذف اعضای غیرغعال گروه
 !kickme
 خروج از گروه
-2-Statistics list ^
+Statistics list ^
 !who
 لیست+ایدی همه اعضا
 !all
@@ -292,14 +290,14 @@ function create_config( )
 لیست مدیران گروه
 !banlist
 لیست اعضا بن شده
-3-Rate Member ^
+Rate Member ^
 !setowner [id]
 (id ایجاد مدیر جدید (همراه 
 !promote [username]
 (ایجاد ادمین جدید (همراه ریپلی)
 !demote [username]
 (برکنار کردن ادمین (همراه ریپلی)
-4-General changes ^
+General changes ^
 !setname [name]
 ایجاد اسم جدید برای گروه
 !setphoto
@@ -319,7 +317,7 @@ function create_config( )
 دیدن تنظیمات فعلی گروه
 !help
 لیست دستورات ربات
-6-Security Group ^
+Security Group ^
 !lock member 
 قفل ورود اعضا جدید
 !lock join
@@ -327,30 +325,24 @@ function create_config( )
 !lock name
 قفل اسم گروه
 !lock chat
-قفل چت ممنوع
-!lock ads
-قفل تبلیغات
+قفل چت 
 !lock leave
-قفل خروج=بن گروه
+قفل خروج=بن از گروه
 !lock fosh
 ممنوع کردن فحش
 !lock chat
 قفل چت ممنوع گروه
-!antibot enable 
-ورود ربات ها ممنوع
-!antibot disable
-ورود ربات ها ازاد
 !unlock xxxx
 [*name*leave*member]
-[*fosh*ads]
-[chat*join*photo]
+[*fosh*]
+[*photo]
 باز کردن دستورات قفل شده
 7-Fun time ^
 !time country city
 ساعت کشور مورد نظر
 !loc country city
 مشخصات کشور و شهر مورد نظر
-!google
+!src
 سرچ مطلب مورد نظر از گوگل
  
  !gps
@@ -358,18 +350,18 @@ function create_config( )
  
  !calc 3+1
  انجام محاسبات ریاضی
-8-Service Provider ^
+Service Provider ^
 !newlink
 ایجاد لینک جدید
 !link
 نمایش لینک گروه
 !linkpv
 فرستادن لینک گروه تو پیوی
-(حتما شماره ربات را سیو کنید)
+
 !invite username
 اضافه کردن شخص تو گروه
-(حتما شماره ربات را سیو کرده باشد)
-9-Member Profile and Group ^
+
+Member Profile and Group^
 !owner
 مدیر گروه
 !id
@@ -378,32 +370,27 @@ function create_config( )
 در اوردن ایدی شخص مورد نظر
 !info 
 مخشصات فرد مورد نظر
-!settings
+
+تنظیمات
 تنظیمات فعلی گروه
-10-filter word Mode ^
-!filter set (word)
+filter word Mode ^
+
+!filter + (word)
 اضافه کردن کلمه جدید به لیست
-!filter del (word)
+!filter - (word)
 حذف کلمه از لیست
 !filter warn (word)
 اخطار به کلمه فیتر شده
 !filterlist
 لیست کلمات فیلتر شده
-11-bot number & support ^
-!botnumber
-دریافت شماره ربات
-!support
-دعوت سازنده ربات به گروه
-(در صورت وجود مشکل)
-!version
-ورژن ربات
-!feedback (text)
+ support 
+(text) ارسال نظر
 ارسال نظرات به سازنده
 you can use both "/" and "!" 
 .شما میتوانید از ! و / استفاده کنید
+شما میتوانید هم فارسی تایپ کنید و هم انگلیسی
 
 G00D LUCK ^_^
-
 ]]
   }
   serialize_to_file(config, './data/config.lua')
