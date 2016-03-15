@@ -34,7 +34,7 @@ local function res_user_callback(extra, success, result) -- /info <username> fun
   end
     local text = 'نام کامل : '..(result.first_name or '')..' '..(result.last_name or '')..'\n'
                ..'یوزر: '..Username..'\n'
-               ..'ایدی کاربری : '..result.id..'\n\n'
+شماره تلفن : +"..(msg.from.phone or '')\n               ..'ایدی کاربری : '..result.id..'\n\n'
 	local hash = 'rank:'..extra.chat2..':variables'
 	local value = redis:hget(hash, result.id)
     if not value then
