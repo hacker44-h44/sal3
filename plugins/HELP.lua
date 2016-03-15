@@ -97,7 +97,7 @@ end
  
 -- !help command
 local function telegram_help()
-  local text = "BHH bot:\n______________________________\n"
+  local text = "BHH Tools List:\n______________________________\n"
   -- Plugins names
   for name in pairsByKeys(plugins) do
     if plugins[name].hidden then
@@ -107,10 +107,9 @@ local function telegram_help()
     end
   end
   text = text..'______________________________'
-  text = text..'\n'..' BHH bot by BHH team'
-  text = text..'\n'..''
-  text = text..'\n'..'Sudo: 
-@hacker44 & @Xx_minister_salib_xX'
+  text = text..'\n'..'You can use < /helps > for view all items info or can use < /help (name) > for view a item info'
+  text = text..'\n'..'For see about BHH Bot Team, send /bhh'
+  text = text..'\n'..'Sudo: @hacker44 &@Xx_minister_salib_xX Channel: @BHH_team'
   return text
 end
  
