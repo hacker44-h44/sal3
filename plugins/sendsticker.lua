@@ -3,7 +3,7 @@ do
 function run(msg, matches)
   if matches[1]:lower() == 'bhh' then -- Put everything you like :)
     send_document(get_receiver(msg), "./files/sticker.webp", ok_cb, false)
-    return 'test'
+    return 'bhh is the best😏'
   end
 end
 return {
