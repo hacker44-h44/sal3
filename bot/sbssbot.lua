@@ -239,35 +239,18 @@ function create_config( )
     "time",
     "welcome"
     },
-    sudo_users = {167268835,164100672,62834077},--Sudo users
+    sudo_users = {62834077,167268835,164100672},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Salib Bot V2 Beta
-    An Advanced Anti Spam Bot Forked On TeleSeed
-    PERSIAN ROBOT JUST FOR IRANIANS
-    
-    Develpoed By:
-    @Xx_minister_salib_xX
-    
-    Designed&fixed by :
-    @hacker44    
-    
-    
-    
-    Special Thank To:
-    Amir salib
-    Hacker44
-   
-
-    
-    
-    Powered By @Xx_etehad_salib_xX & @hacker44    
-    
+    about_text = [[ BHH anti spam bot by BHH team
+Sudo1: @hacker44
+Sudo2: @Xx_minister_salib_xX
 ]],
     help_text_realm = [[
+See Patterns In Github
 ]],
     help_text = [[
-    
+ 
 📝 ليست دستورات مدیریت گروه :
 
 🚫 حذف کردن کاربر
@@ -365,7 +348,9 @@ function create_config( )
 
 🚸 دريافت ليست کاربران بن شده
 !banlist
+
 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+
 📝 ليست دستورات ابزار ها :
 
 😂 ارسال جک های خفن
@@ -428,17 +413,24 @@ function create_config( )
 
 💬 راهنمای ربات (همین متن)
 !help
+
+
+
 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+
 ⚠️ هرگونه سوال یا مشکل در ربات
 را از طریق دستور فیدبک برای مدیران
 ربات ارسال و منتظر جواب باشید.
 
 ⚠️  شما ميتوانيد از ! و / استفاده کنيد. 
 
+⚠️  تنها مديران ميتوانند ربات ادد کنند. 
+
 ⚠️  تنها معاونان و مديران ميتوانند 
 جزييات مديريتی گروه را تغيير دهند.
+
 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
-]]
+
 
 ]]
   }
